@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Love+Ya+Like+A+Sister&display=swap');
+
+:root {
+  --button-color: #808080;
+  --text-color: #333;
+  --error-color: red;
+}
+
+body {
+  font-family: 'Love Ya Like A Sister', cursive;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  min-height: 100vh;
+}
+
+.register-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-image: url('../login/img/fondo\ \(1\).png'); /* Asegúrate de que la ruta de la imagen sea correcta */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.register-form {
+  padding: 20px;
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+  background-color: transparent;
+}
+
+.register-title {
+  font-size: 60px;
+  font-family: 'Love Ya Like A Sister', cursive;
+  color: var(--text-color);
+  margin-bottom: 40px;
+}
+
+.register-title .title-part {
+  display: block;
+  font-size: 120px; /* Ajusta el tamaño según lo necesites */
+}
+
+.register-input {
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  font-size: 18px;
+  text-align: center;
+  background-color: #fff;
+  color: #000;
+  width: calc(70% - 22px); /* Ajusta el ancho de los campos de entrada */
+  padding: 15px; /* Ajusta el padding interno del campo */
+  text-align: left; /* Alinea el texto a la izquierda */
+}
+
+.register-button {
+  background-color: #808080;
+  color: white;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  margin-top: 30px;
+  font-size: 18px;
+  font-family: 'Love Ya Like A Sister', cursive;
+  width: calc(70% - 22px); /* Asegura que el botón tenga el mismo ancho que los campos de entrada */
+}
+
+.register-button:hover {
+  background-color: #696969;
+}
+
+.error-message {
+  color: var(--error-color);
+  margin-bottom: 10px;
+  font-family: Arial, sans-serif;
+}
+
+small {
+  color: var(--error-color);
+  display: block;
+  margin-top: -5px;
+  margin-bottom: 10px;
+  font-family: Arial, sans-serif;
+}

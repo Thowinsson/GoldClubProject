@@ -1,0 +1,27 @@
+<div class="register-container">
+  <div class="register-form">
+    <h2 class="register-title">
+      <span class="title-part">GOLD</span>
+      <span class="title-part">CLUB</span>
+    </h2>
+
+    <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+      <input formControlName="email" placeholder="email" class="register-input" />
+      <div *ngIf="registerForm.get('email')?.invalid && registerForm.get('email')?.touched">
+        <small>Email no válido</small>
+      </div>
+
+      <input formControlName="codigoEmpleado" placeholder="Employee Code" class="register-input" />
+      <div *ngIf="registerForm.get('codigoEmpleado')?.invalid && registerForm.get('codigoEmpleado')?.touched">
+        <small>Código de empleado no válido (mínimo 3 caracteres)</small>
+      </div>
+
+      <input formControlName="password" placeholder="Password" type="password" class="register-input" />
+      <div *ngIf="registerForm.get('password')?.invalid && registerForm.get('password')?.touched">
+        <small>La contraseña debe tener al menos 6 caracteres</small>
+      </div>
+
+      <button type="submit" class="register-button">CHECK IN</button>
+    </form>
+  </div>
+</div>

@@ -1,0 +1,102 @@
+.product-container {
+    background-color: #009688; /* Color de fondo */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    height: 100vh; /* Ocupa toda la altura de la ventana */
+    background-image: url('../login/img/fondo\ \(1\).png'); /* Asegúrate de que la ruta de la imagen sea correcta */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.product-title {
+    font-size: 60px;
+    font-family: 'Love Ya Like A Sister', cursive;
+    color: black;
+    text-align: center; /* Centra el título */
+    margin-bottom: 40px;
+}
+
+.product-title .title-part {
+    display: block;
+    font-size: 100px; /* Ajusta el tamaño según lo necesites */
+}
+
+.loading-message {
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.product-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Ajusta a 2 columnas */
+    grid-gap: 20px;
+    max-height: calc(100vh - 180px); /* Ajusta la altura máxima para dejar espacio al título y mensaje de carga */
+    overflow-y: auto; /* Permite desplazamiento vertical */
+}
+
+.product-item {
+    background-color: #58efe0; /* Tono levemente más oscuro que el fondo azul */
+    display: flex;
+    flex-direction: row;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    align-items: center;
+    width: calc(100% - 20px); /* Reduce el ancho para ajustar el espacio */
+    min-height: 120px; /* Aumenta el largo del item */
+    font-family: 'Love Ya Like A Sister', cursive; /* Aplica la misma fuente que el título */
+}
+
+.product-header {
+    display: flex;
+    flex-direction: column;
+    margin-right: 160px;
+}
+
+.product-name {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.product-price {
+    font-size: 18px;
+    font-weight: bold;
+    color: black; /* Color que resalta el precio */
+}
+
+.product-description {
+    display: flex;
+    flex-direction: column;
+    margin-right: 15px;
+}
+
+.product-description span {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.product-quantity {
+    font-size: 14px;
+    color: black; /* Color gris claro para la cantidad */
+}
+
+.delete-button {
+    border: none;
+    background: transparent; /* Elimina el fondo del botón */
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: auto; /* Alinea el botón a la derecha */
+}
+
+.delete-button svg {
+    fill: red; /* Color rojo para el icono */
+    width: 60px;
+    height: 60px;
+}
